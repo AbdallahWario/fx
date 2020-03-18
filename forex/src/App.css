@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+    color:black;
+    padding: 20px;
+    font-family: 'Montserrat', ;
+    
+}
+.header{
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+    font-family: 'Montserrat', ;
+}
+
+.left-menu{
+    display: flex;
+    align-items: center;
+
+}
+.left-menu .logo{
+    padding: 0 20px;
+    font-size: 1.5rem;
+    color:black;
+    font-weight: 700;
+    
+   }
+
+.nav {
+ 
+   list-style: none;
+   
+
+
+}
+ul {  
+    text-decoration: none;
+    border-bottom:  1px solid black;;
+    color:black;
+}
+.nav ul li{
+    display: flex;
+    justify-content: space-between;
+    color: black; 
+    text-decoration: none;
+    padding: 10px 40px;
+
+}
+li a:hover {
+  
+    color:lightblue;
+}
+.logo{
+    padding: 0px ;
+    text-align: center;
+    border-top: 0px;
+}
+.hero{
+    background-image: url(./img/forex.png);
+    background-size:contain;
+    padding: 120px;
+    color: whitesmoke;
+}
+.title{
+    text-align: left;
+}
+p{
+    padding: 5px;
+    
+}
+.homename{
+    padding:5px ;
+    color: darkgray;
+}
+.home{
+    padding: 20px;
+   
+}
+.home img{
+    width: 1300px;
+    height: 400px;
+}
+.vip{
+    
+    padding: 5px 20px;  
+
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    margin: 25px;
+
+}
+.vip ul{
+    border: 0px;
+    text-align: center;
+    box-shadow: darkgray;
+    text-align: center;
+    margin: 20px;
+    list-style: ;
+   
+}
+.pricing{
+    display: grid;
+    grid-gap: 20px ;
+    grid-template-columns: repeat(3,1fr);
+}
+ .v{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e7e7e8;
+    grid-area: v; 
+
+
+}
+  .vv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: hsl(96, 87%, 50%);
+    grid-area: vv; 
+}
+    
+ .vvv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e7e7e8;
+    grid-area: vvv; 
+
+}
+footer{
+
+    margin-top:2 rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1 rem;
+
+}
+.footerinfo{
+  
+    color: white;
+    background-color:rgb(115, 121, 115);
+   
+
+    
+}
+.boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+}
+.box{
+    background: #ddd;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-color: greenyellow;
+}
+
+/* .packs{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.pack{
+    background: #ddd;
+    text-align: center;
+    padding: 1rem 2rem;
+} */
