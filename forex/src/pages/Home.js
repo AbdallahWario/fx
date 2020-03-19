@@ -11,7 +11,7 @@ export default function Home() {
 
     </div>
  
-  <h1 className="homename">FXBiz</h1>
+  <h1 className="homename">Get started with Forex Today</h1>
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis doloribus,
   dignissimos in nisi temporibus quidem impedit eaque saepe, veritatis tenetur
   magnam quas suscipit velit eveniet mollitia vel magni sit, ipsam iste obcaecati 
@@ -20,19 +20,20 @@ export default function Home() {
  </div>
 
    <div className="aboutus">
-    <h3>Why FXBiz</h3>
-    <section class="boxes">
-                 <div class="box">
+    <h3>Why Choose ForexBiz</h3>
+    <section className="boxes">
+                 <div className="box">
                     
-                    <i class="fas fa-money-check-alt"></i>
+                    <i className="fas fa-chart-bar fa-4x"></i>
                     <h3>Risk Management</h3>
                     <p>
                        We take 3% risk in trade. 
                     </p>
 
                  </div>
-                 <div class="box">
-                    <i class="fas fa-tasks fa-4x" ></i>
+                 <div className="box">
+                  
+                    <i class="fa fa-github fa-4x"></i>
                     <h3>Strategized Trading</h3>
                     <p>
                       We follow a well thought out plan.  
@@ -40,16 +41,16 @@ export default function Home() {
 
                  </div>
 
-                 <div class="box">
-                    <i class="as fa-business-time fa-4x" ></i>
+                 <div className="box">
+                    <i className="fa fa-business-time fa-4x" ></i>
                     <h3>Trade Management</h3>
                     <p>
                      Higher Profit is ensured.
                     </p>
 
                  </div>
-                 <div class="box">
-                    <i class="fas fa-users fa-4x" ></i>
+                 <div className="box">
+                    <i className="fa fa-users fa-4x" ></i>
                     <h3>Support</h3>
                     <p>
                       We offer round the clock assistance throgh our contacts.

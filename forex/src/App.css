@@ -55,7 +55,8 @@ li a:hover {
     border-top: 0px;
 }
 .hero{
-    background-image: url(./img/forex.png);
+    /* background-image: url(./img/forex.png); */
+    background-image: url(./img/bg.jpeg);
     background-size:contain;
     padding: 120px;
     color: whitesmoke;
@@ -69,7 +70,7 @@ p{
 }
 .homename{
     padding:5px ;
-    color: darkgray;
+    
 }
 .home{
     padding: 20px;
@@ -79,24 +80,34 @@ p{
     width: 1300px;
     height: 400px;
 }
-.vip{
-    
-    padding: 5px 20px;  
+.packs{
 
-    text-align: center;
-    display: grid;
+   
     grid-gap: 10px;
-    margin: 25px;
-
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
 }
-.vip ul{
-    border: 0px;
+button {
+    background-color: #4CAF50; /* Green */
+  
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    box-shadow: darkgray;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-bottom: 5px;  
+}
+.pack ul li{
+    
+    text-align: center;
     text-align: center;
     margin: 20px;
-    list-style: ;
-   
+    list-style-type: square;
+    border-radius: 10px;
+    list-style-position: inside;
+  
 }
 .pricing{
     display: grid;
@@ -104,9 +115,11 @@ p{
     grid-template-columns: repeat(3,1fr);
 }
  .v{
-    margin-top: 10px;
+  
     margin-bottom: 10px;
     background-color: #e7e7e8;
+    border-radius: 25px;
+    padding: 10px;
     grid-area: v; 
 
 
@@ -116,12 +129,19 @@ p{
     margin-bottom: 10px;
     background-color: hsl(96, 87%, 50%);
     grid-area: vv; 
+    padding: 10px;
+    border-radius: 25px;
+
 }
     
  .vvv{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #e7e7e8;
+    border-radius: 25px;
+    padding: 10px;
+    list-style: none;
+
     grid-area: vvv; 
 
 }
@@ -138,6 +158,7 @@ footer{
   
     color: white;
     background-color:rgb(115, 121, 115);
+    margin-top: 5px;
    
 
     
@@ -149,19 +170,355 @@ footer{
   
 }
 .box{
-    background: #ddd;
+    background:white;
     text-align: center;
-    padding: 1rem 2rem;
-    border-color: greenyellow;
+    padding: 2rem 2rem;
+    border: 2px solid rgb(34, 243, 34);
+  
+    
+
+}
+.box:hover{
+ border:2px solid #111;
 }
 
-/* .packs{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+.faqs {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 15px;
 }
-.pack{
-    background: #ddd;
+
+.faqs .faq {
+	margin: 15px;
+	padding: 15px;
+	background-color: #FFF;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faqs .faq .faq-question {
+	position: relative;
+	font-size: 20px;
+	padding-right: 80px;
+
+	transition: all 0.4s ease;
+}
+
+.faqs .faq .faq-question::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+
+	background-image: url(./img/arrow.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	transition: all 0.4s ease-out;
+}
+
+.faqs .faq .faq-answer {
+	opacity: 0;
+	max-height: 0;
+	overflow-y: hidden;
+	transition: all 0.4s ease-out;
+}
+
+.faqs .faq.open .faq-question {
+	margin-bottom: 15px;
+}
+
+.faqs .faq.open .faq-question::after {
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.faqs .faq.open .faq-answer {
+	max-height: 1000px;
+	opacity: 1;
+}
+header {
+    margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 15px;
+	background-color: #3c3c3c;
+	border-bottom: 3px solid #56E3B8;
+}
+
+header h1 {
+	color: #EEE;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+  
+ 
+
+  
+  #contact {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+    padding-bottom: 200px;
+  }
+  
+  .section-header {
     text-align: center;
-    padding: 1rem 2rem;
-} */
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font: 300 60px 'Oswald', sans-serif;
+    letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  
+  .contact-wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    max-width: 800px;
+  }
+  
+  /* Begin Left Contact Page */
+  .form-horizontal {
+    float: left;
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .form-control, textarea {
+    max-width: 400px;
+    background-color: #111;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  .button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 300 14px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+    float: right;
+    margin-top: 5px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: 10px auto;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #111;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+ 
+  
+  /* Begin Media Queries*/
+  @media screen and (max-width: 760px) {
+      #contact {
+          height: 1000px;
+      }
+    .section-header {
+      font-size: 65px;
+    }
+    .direct-contact-container, .form-horizontal {
+      float: none;
+      margin: 10px auto;
+    }  
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+    #contact {
+      height: 1200px;
+      }
+    .section-header{
+      font-size: 50px;
+    }
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  }
+
+
+  
+  

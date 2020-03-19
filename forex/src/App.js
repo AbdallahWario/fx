@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Footer from './components/footer';
+import Menu from './components/Menu';
 
 
 import './App.css';
@@ -17,8 +18,7 @@ function App() {
   return (
     <>
 
-      <Navbar />
-
+      <Menu/>
       
 
        <Route exact   path='/home/' component ={Home} />
@@ -26,7 +26,7 @@ function App() {
        <Route exact  path='/pack/' component ={Pack} />
        <Route exact  path='/Contact/' component ={Contact} />
        
-
+    <Footer/>
       
       
       
